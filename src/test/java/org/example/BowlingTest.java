@@ -52,4 +52,11 @@ public class BowlingTest {
 
         assertEquals(74, bowling.calculateScore("5/ X -7 5/ X"));
     }
+
+    @Test
+    void BowlingScoremixedInvalid() {
+        Bowling bowling = new Bowling();
+
+        assertEquals(142, bowling.calculateScore("5/ X -7 5/ 56 5/ 5/ 5/ 5/ 5/ 5"));
+    }
 }

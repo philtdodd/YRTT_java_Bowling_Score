@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d29a1639-29eb-4947-9f30-f744a75cf40b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Bowling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Bowling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/BowlingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/BowlingTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +47,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.BowlingTest">
+  <component name="RunManager" selected="JUnit.BowlingTest.BowlingScorePartialGame2">
     <configuration name="BowlingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT-Java-BowlingScore" />
       <extension name="coverage">
@@ -143,10 +145,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BowlingTest.BowlingScorePartialGame2" />
         <item itemvalue="JUnit.BowlingTest" />
         <item itemvalue="JUnit.BowlingTest.BowlingScorePartialGameEndInStrike" />
         <item itemvalue="JUnit.BowlingTest.BowlingScorePartialGameEndInSpare" />
-        <item itemvalue="JUnit.BowlingTest.BowlingScorePartialGame2" />
         <item itemvalue="JUnit.BowlingTest.BowlingScoremixed" />
       </list>
     </recent_temporary>
@@ -167,7 +169,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Bowling.java</url>
-          <line>43</line>
+          <line>50</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
