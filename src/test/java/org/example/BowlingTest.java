@@ -50,6 +50,6 @@ public class BowlingTest {
     void BowlingScorePartialGameEndInStrike() {
         Bowling bowling = new Bowling();
 
-        assertEquals(69, bowling.calculateScore("5/ X -7 5/ X"));
+        assertEquals(74, bowling.calculateScore("5/ X -7 5/ X"));
     }
 }
