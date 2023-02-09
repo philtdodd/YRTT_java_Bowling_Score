@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d29a1639-29eb-4947-9f30-f744a75cf40b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Bowling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Bowling.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,6 +110,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BowlingTest.BowlingScorePartialGame2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YRTT-Java-BowlingScore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.BowlingTest" />
+      <option name="METHOD_NAME" value="BowlingScorePartialGame2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BowlingTest.BowlingScoremixed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YRTT-Java-BowlingScore" />
       <extension name="coverage">
@@ -128,6 +145,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BowlingTest" />
+        <item itemvalue="JUnit.BowlingTest.BowlingScorePartialGame2" />
         <item itemvalue="JUnit.BowlingTest.BowlingScoremixed" />
         <item itemvalue="JUnit.BowlingTest.BowlingScoreMax" />
         <item itemvalue="JUnit.BowlingTest.BowlingScoreAllSpares" />
