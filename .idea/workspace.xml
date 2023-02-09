@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d29a1639-29eb-4947-9f30-f744a75cf40b" name="Changes" comment="" />
+    <list default="true" id="d29a1639-29eb-4947-9f30-f744a75cf40b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Bowling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Bowling.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -148,7 +150,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Bowling.java</url>
-          <line>39</line>
+          <line>43</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>

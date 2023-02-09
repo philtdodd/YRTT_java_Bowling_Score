@@ -36,7 +36,11 @@ public class Bowling {
         }
 
         // iterate over scores adding the scores up.
-        for (Integer i = 0; i < 20; ) {
+        int max = 20;
+        if (balls.size() < 20)
+            max = balls.size();
+
+        for (Integer i = 0; (i < max); ) {
             totalScore += balls.get(i);
             if (balls.get(i) == 10) {
                 if (balls.get(i+2) == 10)

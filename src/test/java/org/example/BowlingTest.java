@@ -26,9 +26,16 @@ public class BowlingTest {
     }
 
     @Test
-    void BowlingScorePartialGame() {
+    void BowlingScorePartialGame1() {
         Bowling bowling = new Bowling();
 
-        assertEquals(142, bowling.calculateScore("5/ X -7 5/ 53"));
+        assertEquals(67, bowling.calculateScore("5/ X -7 5/ 53"));
+    }
+
+    @Test
+    void BowlingScorePartialGame2() {
+        Bowling bowling = new Bowling();
+
+        assertEquals(64, bowling.calculateScore("5/ X -7 5/ 5"));
     }
 }
