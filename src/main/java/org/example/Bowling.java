@@ -41,23 +41,35 @@ public class Bowling {
         if (balls.size() < 20)
             max = balls.size();
 
-        // Check frames are 10 or less.
+        // Check frames add up to 10 or less.
         for (Integer i = 0; (i < max-1); i += 2)
             if (i != max && balls.get(i) + balls.get(i+1) > 10)
                 throw new InvalidParameterException("Invalid Score Sheet");
 
         // Calculate the score
         for (Integer i = 0; (i < max); ) {
+            // add this ball to the score
             totalScore += balls.get(i);
             // handle looking forward if it is a strike or a spare
             if (balls.get(i) == 10) { // STRIKE
-                if ((i + 4) < balls.size() && balls.get(i + 2) == 10 ) // Next ball is strike, so skip a ball
-                    totalScore += balls.get(i + 2) + balls.get(i + 4);
-                else if ((i + 3) < balls.size()) // Handle non STRIKE case
-                    totalScore += balls.get(i + 2) + balls.get(i + 3);
+                // add next frame ball 1 if in array
+                if ((i + 2) < balls.size()) {
+                    totalScore += balls.get(i + 2);
+                }
+
+                // if next frame ball 1 not strike add ball two from next frame.
+                if ((i + 3) < balls.size() && balls.get(i+3) != 0) {
+                    totalScore += balls.get(i + 3);
+                }
+
+                // if first ball of next frame a strike then add the next frames first ball.
+                if ((i + 4) < balls.size() && balls.get(i+2) == 10) {
+                    totalScore += balls.get(i + 4);
+                }
+
                 i += 1;
             } else if ((i % 2 == 0) && (i + 2 < balls.size()) &&
-                    (balls.get(i) + balls.get(i + 1)) == 10) { // SPARE if there yet
+                    (balls.get(i) + balls.get(i + 1)) == 10) { // add SPARE if there yet
                 totalScore += balls.get(i + 2);
             }
 

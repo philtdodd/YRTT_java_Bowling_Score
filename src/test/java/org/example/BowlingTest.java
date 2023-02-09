@@ -1,7 +1,8 @@
 package org.example;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class BowlingTest {
     @Test
@@ -19,7 +20,7 @@ public class BowlingTest {
     }
 
     @Test
-    void BowlingScoremixed() {
+    void BowlingScoreMixed() {
         Bowling bowling = new Bowling();
 
         assertEquals(142, bowling.calculateScore("5/ X -7 5/ 53 5/ 5/ 5/ 5/ 5/ 5"));
@@ -54,9 +55,21 @@ public class BowlingTest {
     }
 
     @Test
-    void BowlingScoremixedInvalid() {
+    void BowlingScoreMixedInvalid() {
+        Bowling bowling = new Bowling();
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            bowling.calculateScore("5/ X -7 5/ 56 5/ 5/ 5/ 5/ 5/ 5");
+        });
+
+        String actualMessage = exception.getMessage();
+
+        assertTrue(actualMessage.matches("Invalid Score Sheet"));
+    }
+
+    @Test
+    void BowlingScoreMixedPartialStrikePlusOneBall() {
         Bowling bowling = new Bowling();
 
-        assertEquals(142, bowling.calculateScore("5/ X -7 5/ 56 5/ 5/ 5/ 5/ 5/ 5"));
+        assertEquals(84, bowling.calculateScore("5/ X -7 5/ X 5"));
     }
 }
