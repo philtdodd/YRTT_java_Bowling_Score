@@ -43,12 +43,12 @@ public class Bowling {
         for (Integer i = 0; (i < max); ) {
             totalScore += balls.get(i);
             if (balls.get(i) == 10) {
-                if (balls.get(i + 2) == 10)
+                if (balls.get(i + 2) == 10 && ((i + 4) < balls.size()))
                     totalScore += balls.get(i + 2) + balls.get(i + 4);
-                else
+                else if ((i + 3) < balls.size())
                     totalScore += balls.get(i + 2) + balls.get(i + 3);
                 i += 1;
-            } else if ((i % 2 == 0) && (i + 2 <= balls.size()) &&
+            } else if ((i % 2 == 0) && (i + 2 < balls.size()) &&
                     (balls.get(i) + balls.get(i + 1)) == 10) {
                 totalScore += balls.get(i + 2);
             }

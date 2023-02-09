@@ -38,4 +38,18 @@ public class BowlingTest {
 
         assertEquals(64, bowling.calculateScore("5/ X -7 5/ 5"));
     }
+
+    @Test
+    void BowlingScorePartialGameEndInSpare() {
+        Bowling bowling = new Bowling();
+
+        assertEquals(69, bowling.calculateScore("5/ X -7 5/ 5/"));
+    }
+
+    @Test
+    void BowlingScorePartialGameEndInStrike() {
+        Bowling bowling = new Bowling();
+
+        assertEquals(69, bowling.calculateScore("5/ X -7 5/ X"));
+    }
 }
