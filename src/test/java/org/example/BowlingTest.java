@@ -22,6 +22,13 @@ public class BowlingTest {
     void BowlingScoremixed() {
         Bowling bowling = new Bowling();
 
-        assertEquals(150, bowling.calculateScore("5/ X -7 5/ 53 5/ 5/ 5/ 5/ 5/ 5"));
+        assertEquals(142, bowling.calculateScore("5/ X -7 5/ 53 5/ 5/ 5/ 5/ 5/ 5"));
+    }
+
+    @Test
+    void BowlingScorePartialGame() {
+        Bowling bowling = new Bowling();
+
+        assertEquals(142, bowling.calculateScore("5/ X -7 5/ 53"));
     }
 }
