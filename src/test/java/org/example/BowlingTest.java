@@ -1,6 +1,8 @@
 package org.example;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -72,4 +74,15 @@ public class BowlingTest {
 
         assertEquals(84, bowling.calculateScore("5/ X -7 5/ X 5"));
     }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/data/tenpin-tests.csv", numLinesToSkip = 0)
+    void BowlingScoreCSV(
+            int expected, String input) {
+        Bowling bowling = new Bowling();
+
+        int actualValue = bowling.calculateScore(input);
+        assertEquals(expected, actualValue);
+    }
+
 }
